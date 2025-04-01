@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Refacciones y Motos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Refacciones y Motos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalogo">
+        <h2>Catálogo de Productos</h2>
+
+        <!-- Sección de Motocicletas -->
+        <div class="categoria">
+            <h3 class="titulo-categoria">Motocicletas</h3>
+            <ul class="lista-subcategorias">
+                <li class="subcategoria">Convencionales</li>
+                <div class="productos">
+                    <div class="producto" onclick="mostrarInfo('info-moto150')">
+                        <img src="img/moto150.jpg" alt="Motocicleta 150cc">
+                        <h4>Motocicleta 150cc</h4>
+                        <p>$35,000 MXN</p>
+                    </div>
+                    <div id="info-moto150" class="info-producto">
+                        <p>Motor 150cc, 5 velocidades, enfriamiento por aire.</p>
+                    </div>
+
+                    <div class="producto" onclick="mostrarInfo('info-moto250')">
+                        <img src="img/moto250.jpg" alt="Motocicleta 250cc">
+                        <h4>Motocicleta 250cc</h4>
+                        <p>$45,000 MXN</p>
+                    </div>
+                    <div id="info-moto250" class="info-producto">
+                        <p>Motor 250cc, 6 velocidades, enfriamiento líquido.</p>
+                    </div>
+                </div>
+                <li class="subcategoria">Eléctricas</li>
+                <div class="productos">
+                    <div class="producto" onclick="mostrarInfo('info-moto-elec-2000')">
+                        <img src="img/moto_elec_2000.jpg" alt="Motocicleta Eléctrica 2000W">
+                        <h4>Motocicleta Eléctrica 2000W</h4>
+                        <p>$60,000 MXN</p>
+                    </div>
+                    <div id="info-moto-elec-2000" class="info-producto">
+                        <p>Motor eléctrico 2000W, autonomía 80km, carga rápida.</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Sección de Refacciones -->
+        <div class="categoria">
+            <h3 class="titulo-categoria">Refacciones</h3>
+            <ul class="lista-subcategorias">
+                <li class="subcategoria">Motor</li>
+                <div class="productos">
+                    <div class="producto" onclick="mostrarInfo('info-aceite')">
+                        <img src="img/aceite.jpg" alt="Aceite Sintético">
+                        <h4>Aceite Sintético</h4>
+                        <p>$250 MXN</p>
+                    </div>
+                    <div id="info-aceite" class="info-producto">
+                        <p>Aceite 100% sintético para motores de alto rendimiento.</p>
+                    </div>
+
+                    <div class="producto" onclick="mostrarInfo('info-filtro-aceite')">
+                        <img src="img/filtro_aceite.jpg" alt="Filtro de Aceite">
+                        <h4>Filtro de Aceite</h4>
+                        <p>$180 MXN</p>
+                    </div>
+                    <div id="info-filtro-aceite" class="info-producto">
+                        <p>Filtro de alta eficiencia para motores de 150cc a 250cc.</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Refacciones y Motos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

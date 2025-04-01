@@ -1,0 +1,211 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sección de bienvenida */
+#inicio {
+    padding: 100px 20px 40px;
+    background-image: url('img/motos_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+#inicio h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#inicio p {
+    font-size: 18px;
+}
+
+/* Sección del catálogo */
+#catalogo {
+    padding: 100px 20px 40px;
+}
+
+.categoria {
+    background-color: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-categoria {
+    font-size: 22px;
+    background-color: #0074D9;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-subcategorias {
+    list-style: none;
+    padding: 10px;
+}
+
+.subcategoria {
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.producto h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0074D9;
+}
+
+/* Información desplegable */
+.info-producto {
+    display: none;
+    background-color: #e3e3e3;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 80px 20px;
+    background-color: #001f3f;
+    color: white;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton-contacto {
+    background-color: #0074D9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton-contacto:hover {
+    background-color: #005bb5;
+}
+
+/* Botón de WhatsApp */
+.boton-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton-whatsapp:hover {
+    background-color: #1ebe57;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
